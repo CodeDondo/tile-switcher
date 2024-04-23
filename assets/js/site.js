@@ -9,30 +9,30 @@ let smallImageFour = document.getElementById('imgFour')
 
 
 
-smallImageOne.addEventListener('click',  (event)=>{
+smallImageOne.addEventListener('click', (event) => {
 
-ChangeImage(smallImageOne)
+    ChangeImage(smallImageOne)
 })
 
-smallImageTwo.addEventListener('click',  (event)=>{
+smallImageTwo.addEventListener('click', (event) => {
 
-ChangeImage(smallImageTwo)
+    ChangeImage(smallImageTwo)
 })
 
-smallImageThree.addEventListener('click',  (event)=>{
+smallImageThree.addEventListener('click', (event) => {
 
     ChangeImage(smallImageThree)
-    })
+})
 
-    smallImageFour.addEventListener('click',  (event)=>{
+smallImageFour.addEventListener('click', (event) => {
 
-        ChangeImage(smallImageFour)
-        })
+    ChangeImage(smallImageFour)
+})
 
-        function ChangeImage(smallImageReciver){
+function ChangeImage(smallImageReciver) {
 
-            let bigImageUrl = mainImage.src
+    let bigImageUrl = mainImage.src
 
-            mainImage.src = smallImageReciver.src
-            smallImageReciver.src = bigImageUrl
-        }
+    mainImage.src = smallImageReciver.src
+    smallImageReciver.src = bigImageUrl
+}
